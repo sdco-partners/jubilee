@@ -1,21 +1,21 @@
 {
-  "name": "[INIT]",
+  "name": "Jubilee",
   "version": "1.0.0",
-  "description": "[INIT]",
+  "description": "Jubliee 2017",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "[INIT]"
+    "url": "https://github.com/sdco-partners/jubilee"
   },
   "author": "SDCO Partners",
   "license": "ISC",
   "bugs": {
-    "url": "[INIT]"
+    "url": "https://github.com/sdco-partners/jubilee#bugs"
   },
-  "homepage": "[INIT]",
+  "homepage": "http://gardenandgunjubliee.com",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.1.1",

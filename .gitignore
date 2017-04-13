@@ -72,4 +72,7 @@ content/wp-cache-config.php
 *.mp4
 
 # ignore config
-content/themes/[init]/config.php
+content/themes/jubliee/config.php
+
+# ignore assets
+content/themes/assets/

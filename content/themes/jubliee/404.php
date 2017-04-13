@@ -4,18 +4,12 @@
  *
  * Contans footer assets.
  *
- * @link [INIT]
+ * @link Jubliee
  *
- * @package [INIT]
+ * @package Jubliee
  * @subpackage Wordpress
  * @since 1.0
  * @version 1.0
  */
 
 ?>
-
-
-</body><!-- end -->
-</html>
-
-<?php wp_footer(); ?>
