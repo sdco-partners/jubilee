@@ -1,8 +1,8 @@
 <?php
-/**
- * Footer
+/** 
+ * Keys
  *
- * Contans footer assets.
+ * API, Keys & Licenses for SLMGMT
  *
  * @link Jubliee
  *
@@ -12,10 +12,6 @@
  * @version 1.0
  */
 
+
+
 ?>
-
-
-</body><!-- end -->
-</html>
-
-<?php wp_footer(); ?>

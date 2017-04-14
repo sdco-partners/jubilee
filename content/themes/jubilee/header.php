@@ -30,3 +30,15 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- ==== Section: Header ==== -->
+<header>
+  <div class="corners">
+  	<h1>G&amp;G Jubilee</h2>
+  	<h2>Charleston, SC</h2>
+  </div>
+  <div class='save-the-date'>
+    <h3><?php echo file_get_contents($GLOBALS['url'].'/assets/save-the-date.svg'); ?></h3>
+  	<h2>December 1-3, 2017</h2>
+  </div> 
+</header>
