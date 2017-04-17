@@ -1,0 +1,65 @@
+/*  _main.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+#main
+  p
+    margin-top: 20px
+
+  > h2
+    width: 150px
+    margin: 20px auto 0
+
+  > button
+    display: block
+    margin: 10px auto 0
+    width: 90px
+    height: 20px
+
+
+.celebration
+  margin-top: 30px
+
+  h2
+    svg
+      margin-top: 5px
+      width: 150px
+
+
+.event-info
+  margin: 30px auto 0
+  width: 150px
+
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+#main
+  > h2
+    @extend %SweetSans-Medium
+    font-size: $sx3
+    letter-spacing: 0.2em
+    line-height: 1.5em
+    text-transform: uppercase
+    text-align: center
+
+  > button
+    @extend %SweetSans-Medium
+    font-size: 6px
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    background-image: url('../assets/button-default-8.png')
+    border: none
+
+.celebration
+
+  > h2
+    @extend %Eaves-Italic
+    color: $orange
+    text-align: center
+    letter-spacing: 0.03em
+
+
+  

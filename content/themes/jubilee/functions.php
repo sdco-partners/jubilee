@@ -22,7 +22,7 @@
   /* Add Styles, Fonts, and Javascript */
   function my_enqueue_style() {
     // wp_enqueue_style('typography', 'https://cloud.typography.com/778678/7975772/css/fonts.css');
-    // wp_enqueue_style('webtype', 'cloud.webtype.com/css/828a79c4-2903-4c6a-ba5e-e0a7dd680fd7.css');
+    wp_enqueue_style('webtype', 'https://cloud.webtype.com/css/828a79c4-2903-4c6a-ba5e-e0a7dd680fd7.css');
     wp_enqueue_style('styles', $GLOBALS['url'].'/prod/styles.css');
     wp_enqueue_script('underscore', $GLOBALS['url'].'/prod/underscore.js', array('jquery'), '1.0.0', true);
     wp_enqueue_script('scripts-min', $GLOBALS['url'].'/prod/scripts.js', array('jquery'), '1.0.0', true);
