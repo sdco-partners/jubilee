@@ -1,0 +1,59 @@
+/*  _header.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+header
+  +img($c: cover)
+  height: 200px
+  width: 100%
+
+.corners
+  +flex
+
+  h1, h2
+    flex: 0 0 auto
+    padding-top: 4px
+    padding-bottom: 3px
+    margin-top: 15px
+
+  h1
+    margin-left: 15px
+
+  h2
+    margin-right: 15px
+
+.save-the-date
+  
+  h3
+    display: block
+    margin: 0 auto
+    width: 80px
+    margin-top: -18px
+
+  h2 
+    margin-top: 5px
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+header
+
+.corners
+  h1, h2 
+    @extend %Eaves-Roman
+    color: $orange
+    font-size: $sx2
+    border-top: 1px solid $orange
+    border-bottom: 1px solid $orange
+
+  h1
+    text-transform: uppercase
+
+.save-the-date
+  h2
+    color: $white
+    font-size: $sx1
+    text-transform: uppercase
+    text-align: center

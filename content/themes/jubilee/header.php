@@ -12,6 +12,8 @@
  * @version 1.0
  */
 
+  $img = $GLOBALS['url'].'/assets/jubilee-header.png';
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 
@@ -32,7 +34,7 @@
 <body <?php body_class(); ?>>
 
 <!-- ==== Section: Header ==== -->
-<header>
+<header style="background-image: url('<?php echo $img; ?>')">
   <div class="corners">
   	<h1>G&amp;G Jubilee</h2>
   	<h2>Charleston, SC</h2>
