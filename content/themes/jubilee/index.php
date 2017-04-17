@@ -23,7 +23,7 @@
 
 <!-- ==== Section: Image Block 1 ====  -->
 <section class="image-block">
-  <?php get_template_part('components/image-blocks'); ?>
+  <?php get_template_part('components/image-block'); ?>
 </section>
 
 

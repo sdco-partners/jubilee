@@ -1,0 +1,66 @@
+/*  _newsletter.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+#newsletter
+  margin-top: 30px
+  
+  form
+    width: 250px
+    margin: 20px auto 0
+
+    .form
+      display: block
+      width: 250px
+      height: 30px
+      margin-top: 5px
+
+    #fsubmit
+      display: block
+      margin: 10px auto 0
+      width: 90px
+      height: 20px
+   
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+#newsletter
+  h2 
+    @extend %SweetSans-Medium
+    font-size: $sx3
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    text-align: center
+
+  h3
+    @extend %Eaves-Italic
+    text-align: center
+
+  form
+    .form
+      +img($c: contain)
+      background-image: url('../assets/form-border.svg')
+      border: none
+      @extend %SweetSans-Medium
+      color: $black
+      letter-spacing: .1em
+      text-transform: uppercase
+      text-align: center
+
+      +placeholder
+        font-size: $sx3
+        color: $grey
+        letter-spacing: .3em
+        text-transform: uppercase
+        text-align: center
+
+    #fsubmit
+      @extend %SweetSans-Medium
+      font-size: 6px
+      letter-spacing: 0.2em
+      text-transform: uppercase
+      background-image: url('../assets/button-default-8.png')
+      border: none
