@@ -16,4 +16,4 @@
 	<?php echo file_get_contents($GLOBALS['url'].'/assets/title.svg'); ?>
 </div>
 <h2><?php echo get_field('hr_ticket-head', 2) ?></h2>
-<button><?php echo get_field('hr_ticket-cta', 2) ?></button>
+<button id="toggle-popup"><?php echo get_field('hr_ticket-cta', 2) ?></button>

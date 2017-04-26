@@ -1,0 +1,120 @@
+/*  _popup.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+#popup
+  opacity: 0
+  position: fixed
+  top: calc(50vh - 300px)
+  left: calc(50vw - 220px)
+  width: 440px
+  height: 530px
+  padding-top: 75px
+  z-index: -1
+
+  
+  form
+    padding-left: 50px
+    padding-right: 50px
+
+    .popup
+      display: block
+      width: 333px
+      height: 31px
+      margin-top: 5px
+      padding-top: 5px
+
+      +tablet
+        margin-top: 15px
+        margin-left: auto
+        margin-right: auto
+
+
+      +placeholder
+        margin-top: 5px
+        padding-top: 2px
+        // padding-bottom: 5px
+
+    #psubmit
+      display: block
+      margin: 10px auto 0
+      width: 148px
+      height: 43px
+  
+  .close
+    position: absolute
+    top: 10px
+    right: 10px
+
+    width: 15px
+    height: 15px   
+
+  .jubilee-logo
+    margin-top: 0
+    width: 120px
+    heightL 125px
+
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+#popup
+  background-color: $grey
+  transition: opacity 0.2s ease-in
+  h2 
+    @extend %SweetSans-Medium
+    font-size: $sx3
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    text-align: center
+
+    +desktop
+      font-size: $sx1
+
+  h3
+    @extend %Eaves-Italic
+    text-align: center
+
+    +desktop
+      font-size: $bx2
+      line-height: 1.3em
+
+  form
+    .popup
+      +img($c: contain)
+      background-image: url('../assets/form-border.svg')
+      border: none
+      @extend %SweetSans-Medium
+      color: $black
+      // background-color: $grey
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      text-align: center
+
+      +placeholder
+        font-size: $sx3
+        color: $grey
+        letter-spacing: .3em
+        text-transform: uppercase
+        text-align: center
+
+        +desktop
+          font-size: $sx1
+
+    #psubmit
+      +img($c: contain)
+      @extend %SweetSans-Medium
+      font-size: 9px
+      letter-spacing: 0.2em
+      text-transform: uppercase
+      background-color: $grey
+      border: none
+      transition: all 0.3s ease-in
+
+      &:hover
+        color: $orange
+
+      +desktop
+        font-size: 8px

@@ -117,6 +117,9 @@ Follow these steps to edit a current project. This will set up the repository an
 4. Use Migrate DB to fetch content from server
   * [ ]  Follow prompts 
 
+### Deploying to Server
+
+
 If you choose not to follow these steps, you will be unable to keep the repository up-to-date, and you will have to deal with minified and uglified JS and CSS files. See notes under DEV ENVIRONMENT for more info.
 
 

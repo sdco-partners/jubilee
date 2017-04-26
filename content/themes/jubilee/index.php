@@ -37,4 +37,9 @@
   <?php get_template_part('components/social-info'); ?>
 </section>
 
+<!-- ==== Section: Newsletter ==== -->
+<section id="popup">
+  <?php get_template_part('components/popup'); ?>
+</section>
+
 <?php get_footer();
