@@ -6,7 +6,7 @@
 
 header
   +img($c: cover)
-  height: 200px
+  height: 65vw
   width: 100%
 
 .corners
@@ -14,9 +14,13 @@ header
 
   h1, h2
     flex: 0 0 auto
-    padding-top: 4px
+    padding-top: 5px
     padding-bottom: 3px
-    margin-top: 15px
+    margin-top: 25px
+
+    +desktop
+      padding-top: 8px
+      padding-bottom: 6px
 
   h1
     margin-left: 15px
@@ -28,12 +32,22 @@ header
   
   h3
     display: block
-    margin: 0 auto
-    width: 80px
-    margin-top: -18px
+    margin: -27px auto 0
+    width: 75px
+    height: 19px
 
+    +tablet
+      width: 120px
+      height: 31px
+
+    +desktop
+      width: 170px
+      height: 44px
   h2 
     margin-top: 5px
+
+    +desktop
+      margin-top: 15px
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
@@ -44,9 +58,12 @@ header
   h1, h2 
     @extend %Eaves-Roman
     color: $orange
-    font-size: $sx2
+    font-size: 7px
     border-top: 1px solid $orange
     border-bottom: 1px solid $orange
+
+    +desktop
+      font-size: $b
 
   h1
     text-transform: uppercase
@@ -54,6 +71,12 @@ header
 .save-the-date
   h2
     color: $white
-    font-size: $sx1
+    font-size: 1em
     text-transform: uppercase
     text-align: center
+
+    +tablet
+      font-size: $body
+
+    +desktop
+      font-size: 2.4em

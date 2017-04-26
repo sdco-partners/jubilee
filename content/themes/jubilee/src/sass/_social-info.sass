@@ -1,12 +1,126 @@
-/*  _main.sass */
+/*  _social-info.sass */
 /* INCEPTION RULE: DO NOT nest more than 4  */
 
 /* PAGE CONTEXT -> For positioning items */
 /* includes positioning styles like display, padding, margin, height */
+
+.jubilee-logo
+  width: 140px
+  heightL 87px
+  margin: 30px auto 0
+
+  +desktop
+    margin-top: 50px
+
+.social-links
+  +flex
+  width: 100px
+  height: 60px
+  margin: 20px auto
+
+  div
+    flex: 0 0 33.33%
+    margin-top: 4px
+    padding: 5px
+    width: 30px
+    height: 30px
+    
+
+  #face
+    .face-cls-1
+      transition: all 0.3s ease-in
+    &:hover
+      .face-cls-1
+        fill: $black
+
+  #twit
+    .twit-cls-1
+      transition: all 0.3s ease-in
+    &:hover
+      .twit-cls-1
+        fill: $black
+
+  #insta
+    .insta-cls-1
+      transition: all 0.3s ease-in
+    &:hover
+      .insta-cls-1
+        fill: $black
+
+  h3
+    flex: 1 0 100%
+
+.partners
+  +flex
+  margin: 30px auto 0
+  width: 260px
+
+  +tablet
+    width: 600px
+
+  +desktop
+    margin-top: 50px
+    width: 900px
+  
+  h3
+    flex: 1 0 100%
+
+    +desktop
+      margin-bottom: 5px
+
+  .founding
+    flex: 0 0 33.33%
+    margin-top: 20px
+    
+    .logo
+      width: 80px
+      height: 40px
+
+      +tablet
+        display: block
+        margin: 0 auto
+        width: 130px
+        height: 68px
+
+
+    h3
+      margin-top: 10px
+      width: 80px
+
+      +tablet
+        width: 100%
+
 
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
 
 
-  
+.social-links
+  h3
+    @extend %SweetSans-Medium
+    color: $orange
+    font-size: 0.7em
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    text-align: center
+
+
+.partners
+  > h3
+    @extend %SweetSans-Medium
+    font-size: 0.7em
+    text-align: center
+    text-transform: uppercase
+
+  .founding
+    text-align: center
+
+    h3
+      @extend %SweetSans-Medium
+      color: $orange
+      font-size: 9px
+      text-transform: uppercase
+
+      +desktop
+        font-size: 0.7em

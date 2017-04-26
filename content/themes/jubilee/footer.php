@@ -23,15 +23,21 @@
 <!-- ==== Section: Footer -->
 <footer>
   <div class="links">
-  	<h3>Press Inquiries</h3>
-  	<h3>Contact us</h3>
-  	<h3>Garden &amp; Gun</h3>
+  	<h3>
+  	  <a href="<?php echo get_field('ft_inquiries', 2); ?>">Press Inquiries</a>
+  	</h3>
+  	<h3>
+  	  <a href="<?php echo get_field('ft_contact', 2); ?>">Contact us</a>
+  	</h3>
+  	<h3>
+  	  <a href="<?php echo get_field('ft_gg', 2); ?>" target="_blank">Garden &amp; Gun</a>
+  	</h3>
   </div>
-	<div class="2017-logo">
+	<div class="twentyseventeen">
 		<?php echo file_get_contents($GLOBALS['url'].'/assets/2017-logo.svg'); ?>
 	</div>
 	<div class="copyright">
 		<h3>Copyright Garden &amp; Gun</h3>
-		<h3>Site By SDCO Partners</h3>
+		<h3>Site By <a href="https://sdcopartners.com" target="_blank">SDCO Partners</a></h3>
 	</div>
 </footer>

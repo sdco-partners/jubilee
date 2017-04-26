@@ -12,7 +12,7 @@
  * @version 1.0
  */
 
-  $img = $GLOBALS['url'].'/assets/jubilee-header.png';
+  $img = get_field('hr_image', 2);
 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
@@ -34,13 +34,13 @@
 <body <?php body_class(); ?>>
 
 <!-- ==== Section: Header ==== -->
-<header style="background-image: url('<?php echo $img; ?>')">
+<header style="background-image: url('<?php echo $img['url']; ?>')">
   <div class="corners">
   	<h1>G&amp;G Jubilee</h2>
   	<h2>Charleston, SC</h2>
   </div>
   <div class='save-the-date'>
     <h3><?php echo file_get_contents($GLOBALS['url'].'/assets/save-the-date.svg'); ?></h3>
-  	<h2>December 1-3, 2017</h2>
+  	<h2><?php echo get_field('hr_date', 2) ?></h2>
   </div> 
 </header>

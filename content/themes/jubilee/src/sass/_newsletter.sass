@@ -1,0 +1,116 @@
+/*  _newsletter.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+#newsletter
+  margin-top: 30px
+
+  +tablet
+    margin-top: 50px
+  
+  form
+    width: 250px
+    margin: 20px auto 0
+
+    +tablet
+      width: 400px
+
+    +desktop
+      width: 600px
+
+    .form
+      display: block
+      width: 250px
+      height: 30px
+      margin-top: 5px
+      padding-top: 5px
+
+      +tablet
+        width: 400px
+        margin-top: 15px
+
+      +desktop
+        width: 600px
+        height: 40px
+
+      +placeholder
+        margin-top: 5px
+        padding-top: 2px
+        // padding-bottom: 5px
+
+    #fsubmit
+      display: block
+      margin: 10px auto 0
+      width: 148px
+      height: 43px
+
+      +tablet
+        margin-top: 15px
+
+      +desktop
+        margin-top: 30px
+        width: 120px
+        height: 40px
+   
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+#newsletter
+  h2 
+    @extend %SweetSans-Medium
+    font-size: $sx3
+    letter-spacing: 0.2em
+    text-transform: uppercase
+    text-align: center
+
+    +desktop
+      font-size: $sx1
+
+  h3
+    @extend %Eaves-Italic
+    text-align: center
+
+    +desktop
+      font-size: $bx2
+      line-height: 1.3em
+
+  form
+    .form
+      +img($c: contain)
+      background-image: url('../assets/form-border.svg')
+      border: none
+      @extend %SweetSans-Medium
+      color: $black
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      text-align: center
+
+      +placeholder
+        font-size: $sx3
+        color: $grey
+        letter-spacing: .3em
+        text-transform: uppercase
+        text-align: center
+
+        +desktop
+          font-size: $sx1
+
+    #fsubmit
+      +img($c: contain)
+      @extend %SweetSans-Medium
+      font-size: 9px
+      letter-spacing: 0.2em
+      text-transform: uppercase
+      background-image: url('../assets/button-default.png')
+      background-color: $white
+      border: none
+      transition: all 0.3s ease-in
+
+      &:hover
+        background-image: url('../assets/button-active.png')
+
+      +desktop
+        font-size: 8px

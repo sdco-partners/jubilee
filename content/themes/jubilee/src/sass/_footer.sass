@@ -1,0 +1,75 @@
+/*  _footer.sass */
+/* INCEPTION RULE: DO NOT nest more than 4  */
+
+/* PAGE CONTEXT -> For positioning items */
+/* includes positioning styles like display, padding, margin, height */
+
+footer
+  margin-top: 30px
+
+.links
+  +flex
+  padding-top: 20px
+  width: 300px
+  margin: 0 auto
+
+  +desktop
+    width: 450px
+
+  > h3 a
+    flex: 0 0 33.33%
+    transition: all 0.3s ease-in
+
+.twentyseventeen
+  width: 125px
+  margin: 15px auto 0
+
+  +tablet
+    width: 175px
+    margin: 35px auto 0  
+
+.copyright
+  +flex
+  width: 100%
+  margin: 10px auto 0
+  padding-bottom: 20px
+  padding-left: 25px
+  padding-right: 25px
+
+  +tablet
+    width: 98vw
+
+
+/* OBJECTS -> For styling objects */
+/* Includes cosmetic styles like color, typography, and borders */
+
+footer
+  background-color: $grey
+
+.links
+  > h3 a
+    @extend %SweetSans-Medium
+    font-size: 9px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    text-align: center
+    color: $black
+    transition: all 0.3s ease-in
+
+    +desktop
+      font-size: 0.7em
+
+    &:hover
+      color: $white
+
+.copyright, .copyright a
+  @extend %SweetSans-Medium
+  color: $white
+  letter-spacing: 0.1em
+  font-size: 6px
+  text-transform: uppercase
+  text-align: center
+  
+  +desktop
+    font-size: 8px
+

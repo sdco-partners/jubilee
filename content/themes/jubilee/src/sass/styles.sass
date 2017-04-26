@@ -31,11 +31,20 @@ img
 section
   p 
     @extend %Eaves-Roman
-    width: 260px
+    width: 80%
     margin: 0 auto
     color: $black
-    font-size: $sx1
+    font-size: 1em
     text-align: center
+
+    +tablet
+      // width: 500px
+      font-size: 1em
+      line-height: 1.2em
+
+    +desktop
+      // width: 700px
+      font-size: $bx1
 
 
 /* Styles ... */
@@ -47,3 +56,7 @@ section
 @import 'image-block'
 
 @import 'newsletter'
+
+@import 'social-info'
+
+@import 'footer'

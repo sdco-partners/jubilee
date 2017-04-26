@@ -9,29 +9,49 @@
     margin-top: 20px
 
   > h2
-    width: 150px
+    width: 200px
     margin: 20px auto 0
+
+    +desktop
+      width: 250px
+      margin-top: 40px
 
   > button
     display: block
     margin: 10px auto 0
-    width: 90px
-    height: 20px
+    width: 148px
+    height: 43px
 
+    +desktop
+      width: 120px
+      height: 40px
 
 .celebration
   margin-top: 30px
+
+  +tablet
+    margin-top: 40px
+
+  +desktop
+    margin-top: 60px
 
   h2
     svg
       margin-top: 5px
       width: 150px
 
+      +desktop
+        width: 230px
 
 .event-info
   margin: 30px auto 0
   width: 150px
+  height: 66px
 
+  +desktop
+    margin-top: 60px
+    width: 241px
+    height: 105px
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
@@ -39,19 +59,33 @@
 #main
   > h2
     @extend %SweetSans-Medium
-    font-size: $sx3
+    font-size: 0.7em
     letter-spacing: 0.2em
     line-height: 1.5em
     text-transform: uppercase
     text-align: center
 
+    +desktop
+      font-size: $sx1
+      line-height: 1.4em
+
   > button
+    +img($c: contain)
     @extend %SweetSans-Medium
-    font-size: 6px
+    font-size: 9px
     letter-spacing: 0.2em
     text-transform: uppercase
-    background-image: url('../assets/button-default-8.png')
+    background-image: url('../assets/button-default.svg')
+    background-color: $white
     border: none
+    transition: all 0.3s ease-in
+
+    +desktop
+      font-size: 8px
+
+    &:hover
+      +img($c: contain)
+      background-image: url('../assets/button-active.svg')
 
 .celebration
 
@@ -60,6 +94,9 @@
     color: $orange
     text-align: center
     letter-spacing: 0.03em
+
+    +desktop
+      font-size: $bx3
 
 
   
