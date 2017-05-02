@@ -7,26 +7,38 @@
 #popup
   opacity: 0
   position: fixed
-  top: calc(50vh - 300px)
-  left: calc(50vw - 220px)
-  width: 440px
-  height: 530px
-  padding-top: 75px
+  top: calc(50vh - 210px)
+  left: calc(50vw - 150px)
+  width: 300px
+  height: 420px
+  padding-top: 45px
   z-index: -1
 
-  
+  +tablet
+    top: calc(50vh - 325px)
+    left: calc(50vw - 250px)
+    width: 500px
+    height: 650px
+
+
   form
-    padding-left: 50px
-    padding-right: 50px
+    padding-left: 25px
+    padding-right: 25px
+
+    +tablet
+      padding-left: 50px
+      padding-right: 50px
 
     .popup
       display: block
-      width: 333px
-      height: 31px
-      margin-top: 5px
+      width: 250px
+      height: 23px
+      margin-top: 15px
       padding-top: 5px
 
       +tablet
+        width: 400px
+        height: 37px
         margin-top: 15px
         margin-left: auto
         margin-right: auto
@@ -52,9 +64,14 @@
     height: 15px   
 
   .jubilee-logo
-    margin-top: 0
-    width: 120px
-    heightL 125px
+    margin-top: 10px
+    width: 60px
+    height: 66px
+
+    +tablet
+      margin-top: 30px
+      width: 120px
+      heightL 125px
 
 
 /* OBJECTS -> For styling objects */

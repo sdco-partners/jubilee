@@ -24,10 +24,10 @@
 <footer>
   <div class="links">
   	<h3>
-  	  <a href="<?php echo get_field('ft_inquiries', 2); ?>">Press Inquiries</a>
+  	  <a href="mailto:<?php echo get_field('ft_inquiries', 2); ?>">Press Inquiries</a>
   	</h3>
   	<h3>
-  	  <a href="<?php echo get_field('ft_contact', 2); ?>">Contact us</a>
+  	  <a href="mailto:<?php echo get_field('ft_contact', 2); ?>">Contact us</a>
   	</h3>
   	<h3>
   	  <a href="<?php echo get_field('ft_gg', 2); ?>" target="_blank">Garden &amp; Gun</a>

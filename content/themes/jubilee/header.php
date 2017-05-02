@@ -41,6 +41,6 @@
   </div>
   <div class='save-the-date'>
     <h3><?php echo file_get_contents($GLOBALS['url'].'/assets/save-the-date.svg'); ?></h3>
-  	<h2><?php echo get_field('hr_date', 2) ?></h2>
+  	<h2><?php echo file_get_contents($GLOBALS['url'].'/assets/date.svg'); ?></h2>
   </div> 
 </header>

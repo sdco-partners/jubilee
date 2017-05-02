@@ -6,25 +6,27 @@
 
 #main
   p
-    margin-top: 20px
+    margin-top: 40px
 
   > h2
     width: 200px
     margin: 20px auto 0
+    
+    +tablet
+      margin-top: 40px
 
     +desktop
       width: 250px
-      margin-top: 40px
 
   > button
     display: block
     margin: 10px auto 0
     width: 148px
     height: 43px
-
+   
     +desktop
-      width: 120px
-      height: 40px
+      width: 160px
+      height: 80px
 
 .celebration
   margin-top: 30px
@@ -39,19 +41,27 @@
     svg
       margin-top: 5px
       width: 150px
+      
+      +tablet
+        width: 300px
 
       +desktop
-        width: 230px
+        width: 400px
 
 .event-info
   margin: 30px auto 0
   width: 150px
   height: 66px
 
+  +tablet
+    margin-top: 40px
+    width: 220px
+    height: 96px    
+
   +desktop
-    margin-top: 60px
-    width: 241px
-    height: 105px
+    margin-top: 40px
+    width: 280px
+    height: 122px
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
@@ -81,7 +91,7 @@
     transition: all 0.3s ease-in
 
     +desktop
-      font-size: 8px
+      font-size: 11px
 
     &:hover
       +img($c: contain)
@@ -94,9 +104,11 @@
     color: $orange
     text-align: center
     letter-spacing: 0.03em
-
+    
+    +tablet
+      font-size: 22px
     +desktop
-      font-size: $bx3
+      font-size: 32px
 
 
   

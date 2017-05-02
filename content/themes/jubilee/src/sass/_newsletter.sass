@@ -11,49 +11,58 @@
     margin-top: 50px
   
   form
-    width: 250px
+    width: 300px
     margin: 20px auto 0
 
     +tablet
-      width: 400px
+      width: 700px
 
     +desktop
       width: 600px
 
-    .form
+    .form, #emma-lastname, #emma-email, #emma-firstname
       display: block
-      width: 250px
-      height: 30px
+      width: 300px
+      height: 40px
       margin-top: 5px
-      padding-top: 5px
+      // padding-top: 5px
 
       +tablet
-        width: 400px
-        margin-top: 15px
+        width: 700px
+        height: 45px
+        margin-top: 25px
 
       +desktop
         width: 600px
-        height: 40px
+        height: 60px
 
       +placeholder
         margin-top: 5px
         padding-top: 2px
         // padding-bottom: 5px
 
-    #fsubmit
+    #fsubmit, #emma-form-submit-4278772
       display: block
       margin: 10px auto 0
       width: 148px
       height: 43px
 
       +tablet
-        margin-top: 15px
+        margin-top: 30px
 
       +desktop
         margin-top: 30px
-        width: 120px
-        height: 40px
-   
+        width: 160px
+        height: 80px
+
+#emma-subscription-form #emma-form-elements .emma-form-label
+  display: none
+  width: 0
+  float: none
+
+#emma-subscription-form #emma-form-elements .emma-form-input
+  float: initial
+
 
 /* OBJECTS -> For styling objects */
 /* Includes cosmetic styles like color, typography, and borders */
@@ -66,14 +75,14 @@
     text-transform: uppercase
     text-align: center
 
-    +desktop
+    +tablet
       font-size: $sx1
 
   h3
     @extend %Eaves-Italic
     text-align: center
 
-    +desktop
+    +tablet
       font-size: $bx2
       line-height: 1.3em
 
@@ -89,16 +98,16 @@
       text-align: center
 
       +placeholder
-        font-size: $sx3
+        font-size: 8px
         color: $grey
         letter-spacing: .3em
         text-transform: uppercase
         text-align: center
 
-        +desktop
-          font-size: $sx1
+        +tablet
+          font-size: 11px
 
-    #fsubmit
+    #fsubmit, #emma-form-submit-4278772
       +img($c: contain)
       @extend %SweetSans-Medium
       font-size: 9px
@@ -106,6 +115,7 @@
       text-transform: uppercase
       background-image: url('../assets/button-default.png')
       background-color: $white
+      color: $black
       border: none
       transition: all 0.3s ease-in
 
@@ -113,4 +123,8 @@
         background-image: url('../assets/button-active.png')
 
       +desktop
-        font-size: 8px
+        font-size: 11px
+
+#response
+  h3
+    transition: all 0.2s

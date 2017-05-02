@@ -24,7 +24,7 @@ body
 
 img
   width: 100%
-  box-sizing: border-box
+  box-sizing: border-box 
 
 /* Global Styles */
 
@@ -34,18 +34,20 @@ section
     width: 80%
     margin: 0 auto
     color: $black
-    font-size: 1em
+    font-size: 1.1em
     text-align: center
 
-    +tablet
+    +tablet 
       // width: 500px
-      font-size: 1em
+      font-size: 22px
       line-height: 1.2em
 
     +desktop
-      // width: 700px
-      font-size: $bx1
+      width: 700px
+      font-size: 25px
 
+i
+  @extend %Eaves-Italic
 
 /* Styles ... */
 

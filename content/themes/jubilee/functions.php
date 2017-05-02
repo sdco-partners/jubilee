@@ -58,8 +58,8 @@
   *
   * shortcut to test function
   */
-  $test = function($var, $mes){
+  function test ($var, $mes){
     echo "<script>console.log('".$var.", outputs ".$mes."');</script>";
-  }
+  };
 
 ?>

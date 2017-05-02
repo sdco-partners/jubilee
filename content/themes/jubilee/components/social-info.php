@@ -17,19 +17,19 @@
 <div class="social-links">
 	<div id="face">
 	  <a href="<?php echo get_field('sc_face', 2) ?>" 
-	    alt="Garden and Gun Facebook">
+	    target="_blank" alt="Garden and Gun Facebook">
 	    <?php echo file_get_contents($GLOBALS['url'].'/assets/face.svg'); ?>
 	    </a>
 	  </div>
 	<div id="twit">
 	  <a href="<?php echo get_field('sc_twit', 2) ?>" 
-	    alt="Garden and Gun Twitter">
+	    target="_blank" alt="Garden and Gun Twitter" >
 	    <?php echo file_get_contents($GLOBALS['url'].'/assets/twit.svg'); ?>
 	  </a>
 	</div>
 	<div id="insta">
-	  <a href="<?php echo get_field('sc_face', 2) ?>" 
-	    alt="Garden and Gun Instagram">
+	  <a href="<?php echo get_field('sc_insta', 2) ?>" 
+	    target="_blank" alt="Garden and Gun Instagram">
 	    <?php echo file_get_contents($GLOBALS['url'].'/assets/insta.svg'); ?>
 	  </a>
 	</div>
